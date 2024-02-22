@@ -1,0 +1,21 @@
+div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 95vh;
+}
+
+.div {
+  font-family: sans-serif;
+  height: 200px;
+  width: 200px;
+  background-color: #45a9c4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
