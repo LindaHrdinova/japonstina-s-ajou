@@ -32,14 +32,15 @@ div {
 
 #oMne {
   background-color: #45a9c4;
-  background-color: #001359;
-  color: white;
+
   display: flex;
   flex-direction: column;
 }
 
 #kurzy {
   background-color: #45a9c4;
+  background-color: #001359;
+  color: white;
   display: flex;
   flex-direction: column;
 }
@@ -57,7 +58,34 @@ footer {
   padding: 10px 20px;
 }
 
+.main {
+  background-color: #001359;
+  color: white;
+}
+
 .nabidka {
   display: flex;
   justify-content: space-between;
+}
+
+
+.instagram {
+  height: 200px;
+  background-color: #45a9c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seznamRecenzi {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 35px;
+}
+
+.recenze {
+  width: 25%;
+  background-color: #b41818;
 }
