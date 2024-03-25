@@ -15,19 +15,43 @@ header {
 }
 
 nav {
-  background-color: #b41818;
   color: #45a9c4;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  height: 55px;
 }
 
 div {
   padding: 20px 25px;
 }
 
-ul li {
-  display: inline;
+nav ul li {
+  display: block;
   list-style-type: none;
+}
+
+.nav-mobile {
+  width: 55px;
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+}
+
+.nav-hamburger {
+  background-image: url("img/hamburgerMenu.png");
+}
+
+.nav-cross {
+  background-image: url("/img/crossMenu.png");
+}
+
+/*
+.mobile-nav-back {
+  padding: 5px;
+}*/
+
+.nav-list-hidden {
+  display: none;
 }
 
 footer {
@@ -46,7 +70,6 @@ footer {
 
 .nabidka {
   display: flex;
-
 }
 
 .instagram {
@@ -68,4 +91,39 @@ footer {
 .recenze {
   width: 25%;
   background-color: #b41818;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  nav {
+    color: #45a9c4;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: inline;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+
+  .mobile-nav-back {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-list {
+    display: inline;
+    justify-content: space-evenly;
+    padding-left: 0;
+  }
+
+
 }
