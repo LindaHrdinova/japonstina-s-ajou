@@ -1,3 +1,12 @@
+:root {
+  --bgColor1: #e4d7d7;
+  /*#45a9c4*/
+  --bgColor2: #94cad9;
+  --bgColor3: #e6ebda;
+  --white: #ffffff;
+  --black: #1c1c1c;
+}
+
 body {
   width: 100%;
   font-family: sans-serif;
@@ -15,7 +24,7 @@ header {
 }
 
 nav {
-  color: #45a9c4;
+  background-color: var(--bgColor2);
   display: flex;
   justify-content: flex-end;
   height: 55px;
@@ -25,9 +34,14 @@ div {
   padding: 20px 25px;
 }
 
-nav ul li {
+ul li {
   display: block;
   list-style-type: none;
+
+}
+
+li {
+  padding: 3px;
 }
 
 .nav-mobile {
@@ -45,10 +59,9 @@ nav ul li {
   background-image: url("/img/crossMenu.png");
 }
 
-/*
-.mobile-nav-back {
-  padding: 5px;
-}*/
+.nav-list {
+  background-color: var(--bgColor1);
+}
 
 .nav-list-hidden {
   display: none;
@@ -105,24 +118,31 @@ footer {
     width: 100%;
   }
 
-  nav ul li {
+  ul li {
     display: inline;
     list-style-type: none;
     justify-content: space-between;
+
+  }
+
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .mobile-nav-back {
     display: none;
   }
 
-  .nav-mobile {
+  .navigation {
     display: none;
   }
 
   .nav-list {
-    display: inline;
+    display: block;
     justify-content: space-evenly;
-    padding-left: 0;
+    background-color: var(--bgColor1);
   }
 
 
