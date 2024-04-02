@@ -1,15 +1,18 @@
 :root {
   --bgColor1: #e4d7d7;
-  /*#45a9c4*/
   --bgColor2: #94cad9;
   --bgColor3: #e6ebda;
   --white: #ffffff;
   --black: #1c1c1c;
+  --darkBlue: #001359;
+  --lightBlue: #45a9c4;
+  --red: #b41818;
 }
 
 body {
   width: 100%;
   font-family: sans-serif;
+  color: var(--darkBlue);
   margin: 0;
 }
 
@@ -20,7 +23,6 @@ header {
   background-position: top;
   height: 500px;
   width: 100%;
-  color: #001359;
 }
 
 nav {
@@ -42,6 +44,10 @@ ul li {
 
 li {
   padding: 3px;
+}
+
+p {
+  text-align: justify;
 }
 
 .nav-mobile {
@@ -68,15 +74,14 @@ li {
 }
 
 footer {
-  background-color: #45a9c4;
+  background-color: var(--bgColor1);
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
 }
 
 .main {
-  background-color: #001359;
-  color: white;
+  background-color: var(--bgColor3);
   display: flex;
   flex-direction: column;
 }
@@ -103,7 +108,19 @@ footer {
 
 .recenze {
   width: 25%;
-  background-color: #b41818;
+  background-color: var(--bgColor2);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--red)
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: var(--lightBlue)
 }
 
 @media only screen and (min-width: 600px) {
@@ -112,7 +129,6 @@ footer {
   }
 
   nav {
-    color: #45a9c4;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
