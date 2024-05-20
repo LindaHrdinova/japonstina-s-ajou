@@ -1,0 +1,81 @@
+:root {
+  --bgColor1: #505050;
+  --bgColor2: #D6D6D6;
+  --bgColor3: #e6ebda;
+  --white: #ffffff;
+  --black: #1c1c1c;
+  --darkBlue: #001359;
+  --lightBlue: #45a9c4;
+  --red: #b41818;
+}
+
+body {
+  width: 100%;
+  font-family: sans-serif;
+  color: var(--darkBlue);
+  margin: 0;
+}
+
+ul li {
+  display: block;
+  list-style-type: none;
+
+}
+
+li {
+  padding: 3px;
+}
+
+p {
+  text-align: justify;
+}
+
+.main {
+  background-color: var(--bgColor3);
+  display: flex;
+  flex-direction: column;
+}
+
+.nabidka {
+  display: flex;
+}
+
+.instagram {
+  height: 200px;
+  background-color: #45a9c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seznamRecenzi {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 35px;
+}
+
+.recenze {
+  width: 25%;
+  background-color: var(--bgColor2);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--red)
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: var(--lightBlue)
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+}
