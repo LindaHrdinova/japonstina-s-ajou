@@ -1,10 +1,7 @@
-import { useState } from 'react';
 import { Reviews } from './components/Reviews';
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div>

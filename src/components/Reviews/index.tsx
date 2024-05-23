@@ -39,17 +39,6 @@ type ReviewListType = {
   text: string;
 };
 
-/*
-const reviews = rewiewsList.map((review) => {
-  return (
-    <div className="review" key={review.author}>
-      <h3>{review.author}</h3>
-      <h4>{review.score}</h4>
-      <div>{review.text}</div>
-    </div>
-  );
-});
-*/
 export const Reviews: React.FC = () => {
   return (
     <>
