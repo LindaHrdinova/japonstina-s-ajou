@@ -12,13 +12,16 @@ import HomePage from './pages/HomePage/HomePage.tsx';
 import AboutPage from './pages/AboutPage/AboutPage.tsx';
 import CoursesPage from './pages/CoursesPage/CoursesPage.tsx';
 import ContactPage from './pages/ContactPage/ContactPage.tsx';
+import TermsAndConditions from './pages/TermsAndConditions/Terms and Conditions.tsx';
 
 const App = () => {
   return (
     <>
       <Header />
       <Navigation />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </>
   );
@@ -32,7 +35,7 @@ const router = createBrowserRouter([
     children: [
       { path: '', element: <HomePage /> },
       {
-        path: '/oMne',
+        path: '/o-mne',
         element: <AboutPage />,
       },
       {
@@ -42,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/kontakty',
         element: <ContactPage />,
+      },
+      {
+        path: '/obchodni-podminky',
+        element: <TermsAndConditions />,
       },
     ],
   },

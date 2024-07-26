@@ -6,6 +6,10 @@
   gap: 35px;
 }
 
+.revievewList__text {
+  text-align: justify;
+}
+
 .review {
   width: 25%;
   background-color: var(--bgColor2);

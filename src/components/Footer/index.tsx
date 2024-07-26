@@ -8,7 +8,9 @@ export const Footer: React.FC = () => {
           JAPONŠTINA S ÁJOU
         </a>
       </span>
-      <span>Obchodní podmínky</span>
+      <span>
+        <a href="obchodni-podminky">Obchodní podmínky</a>
+      </span>
     </footer>
   );
 };

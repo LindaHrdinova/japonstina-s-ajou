@@ -35,14 +35,14 @@ export const Navigation: React.FC = () => {
         ></button>
       </nav>
       <div className={active ? 'nav-list nav-list-hidden' : 'nav-list'}>
-        <ul>
+        <ul className="menu__list">
           <li>
             <a className="menuItem" href="/">
               domů
             </a>
           </li>
           <li>
-            <a className="menuItem" href="oMne">
+            <a className="menuItem" href="o-mne">
               o mně
             </a>
           </li>
