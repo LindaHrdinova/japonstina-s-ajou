@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const ContactPage = () => {
+const ContactPage: React.FC = () => {
   return (
     <div>
       <p>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { CoursesList } from './CoursesList/coursesList';
 
-const CoursesPage = () => {
+const CoursesPage: React.FC = () => {
   return (
     <div>
       <h2>Recenze</h2>

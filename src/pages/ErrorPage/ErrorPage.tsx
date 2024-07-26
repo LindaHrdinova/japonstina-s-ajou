@@ -1,4 +1,4 @@
-const ErrorPage = () => {
+const ErrorPage: React.FC = () => {
   return (
     <main>
       <h2>404: Tady nic není</h2>

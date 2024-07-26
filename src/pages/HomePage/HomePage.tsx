@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Reviews } from './Reviews';
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   return (
     <div>
       <h1>Welcome to the Home Page</h1>

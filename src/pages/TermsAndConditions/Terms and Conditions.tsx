@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './termsAndConditions.css';
 
-const TermsAndConditions = () => {
+const TermsAndConditions: React.FC = () => {
   return (
     <div>
       <div>
