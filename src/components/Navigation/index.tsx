@@ -37,22 +37,22 @@ export const Navigation: React.FC = () => {
       <div className={active ? 'nav-list nav-list-hidden' : 'nav-list'}>
         <ul>
           <li>
-            <a className="menuItem" href="index.html">
+            <a className="menuItem" href="/">
               domů
             </a>
           </li>
           <li>
-            <a className="menuItem" href="oMne.html">
+            <a className="menuItem" href="oMne">
               o mně
             </a>
           </li>
           <li>
-            <a className="menuItem" href="kurzy.html">
+            <a className="menuItem" href="kurzy">
               kurzy
             </a>
           </li>
           <li>
-            <a className="menuItem" href="kontakty.html">
+            <a className="menuItem" href="kontakty">
               kontakt
             </a>
           </li>
