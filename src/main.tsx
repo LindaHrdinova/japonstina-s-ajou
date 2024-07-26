@@ -14,7 +14,7 @@ import CoursesPage from './pages/CoursesPage/CoursesPage.tsx';
 import ContactPage from './pages/ContactPage/ContactPage.tsx';
 import TermsAndConditions from './pages/TermsAndConditions/Terms and Conditions.tsx';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <Header />
