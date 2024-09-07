@@ -4,7 +4,7 @@ import { CoursesList } from './CoursesList/coursesList';
 const CoursesPage: React.FC = () => {
   return (
     <div>
-      <h2>Recenze</h2>
+      <h2>Kurzy</h2>
       <p>
         Nabízím kurzy japonštiny přizpůsobené na míru studentům. Ať už se
         chystáte na cestu po Japonsku, či chcete rozumět oblíbenému anime, ať

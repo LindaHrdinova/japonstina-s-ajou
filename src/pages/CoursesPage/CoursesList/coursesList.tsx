@@ -1,4 +1,4 @@
-// import './styleReview.css';
+import './styleCourses.css';
 
 const rewiewsList: CoursesListType[] = [
   {
@@ -56,10 +56,11 @@ export const CoursesList: React.FC = () => {
         console.log(courses.price);
         return (
           <div className="courses" key={courses.courseName}>
-            <h3>{courses.courseName}</h3>
-            <h4>
-              {courses.price} Kč / {courses.lessons} dní
-            </h4>
+            <span>{courses.courseName}</span>
+            <span>
+              {courses.price} Kč / {courses.lessons}{' '}
+              {courses.lessons <= 4 ? 'lekce' : 'lekcí'}
+            </span>
           </div>
         );
       })}
