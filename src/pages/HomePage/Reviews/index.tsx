@@ -50,7 +50,11 @@ export const Reviews: React.FC = () => {
           return (
             <div className="review" key={review.author}>
               <h3>{review.author}</h3>
-              <h4>{review.score}</h4>
+              <span>
+                {Array.from({ length: review.score }, (_, i) => (
+                  <span key={i}>⭐</span>
+                ))}
+              </span>
               <div className="revievewList__text">{review.text}</div>
             </div>
           );

@@ -8,9 +8,13 @@
 
 .revievewList__text {
   text-align: justify;
+  padding: 2rem 5px 5px 5px;
 }
 
 .review {
   width: 25%;
-  background-color: var(--bgColor2);
+  background-color: var(--bgColor3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  min-width: 300px;
 }

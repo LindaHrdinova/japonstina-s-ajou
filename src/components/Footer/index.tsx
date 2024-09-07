@@ -9,7 +9,9 @@ export const Footer: React.FC = () => {
         </a>
       </span>
       <span>
-        <a href="obchodni-podminky">Obchodní podmínky</a>
+        <a href="obchodni-podminky" className="footer_link">
+          Obchodní podmínky
+        </a>
       </span>
     </footer>
   );

@@ -4,7 +4,7 @@ import { Reviews } from './Reviews';
 const HomePage: React.FC = () => {
   return (
     <div>
-      <h1>Welcome to the Home Page</h1>
+      <h1>Vítejte</h1>
       <div>
         <p>Vítejte….</p>
         <p>Tady bude asi nějaký úvodní odstavec o Áje jako co vyučuje a tak.</p>

@@ -1,15 +1,10 @@
 import './styleHeader.css';
-import japonstinaSAjouHeader from './img/IMG_1540.jpg';
+import japonstinaSAjouHeader from './img/IMG_1323.jpg';
 
 export const Header: React.FC = () => {
   return (
     <header>
-      <img
-        src={japonstinaSAjouHeader}
-        alt="Ája"
-        className="headerImg"
-        height={'500px'}
-      />
+      <img src={japonstinaSAjouHeader} alt="Ája" className="headerImg" />
     </header>
   );
 };

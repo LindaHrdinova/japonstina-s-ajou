@@ -1,8 +1,11 @@
 header {
-  background-image: url("IMG_1540.jpg");
+  max-height: 430px;
+}
+
+.headerImg {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  height: 500px;
+  background-color: rgb(20, 32, 19);
+  max-height: 430px;
   width: 100%;
+  object-fit: cover;
 }

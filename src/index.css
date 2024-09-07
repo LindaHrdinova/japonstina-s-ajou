@@ -1,7 +1,8 @@
 :root {
-  --bgColor1: #505050;
-  --bgColor2: #D6D6D6;
-  --bgColor3: #e6ebda;
+  --bgColor1: #282525;
+  --bgColor2: #F3F3F3;
+  --bgColor3: #FDFDFD;
+  --bgColor4: #505050;
   --white: #ffffff;
   --black: #1c1c1c;
   --darkBlue: #001359;
@@ -91,8 +92,8 @@ div {
   padding: 20px 25px;
 }
 
-main {
-  background-color: var(--bgColor3);
+p {
+  text-align: justify;
 }
 
 #root {
@@ -100,31 +101,7 @@ main {
   margin: 0 auto;
   padding: 0rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: var(--bgColor2);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -133,10 +110,12 @@ main {
   }
 }
 
-.card {
-  padding: 2em;
-}
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: var(--darkBlue);
+  }
 
-.read-the-docs {
-  color: #888;
+  #root {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
 }

@@ -1,14 +1,9 @@
-h4 {
-  color: blueviolet;
-}
-
 .coursesList {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   padding-right: 0;
 }
-
 
 .courses {
   display: flex;
