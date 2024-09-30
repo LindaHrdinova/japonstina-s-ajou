@@ -1,0 +1,11 @@
+.instagram {
+  width: 100%;
+}
+
+.instagram-lightwidget {
+  width: 100%;
+  border: 0;
+  overflow: 'hidden';
+  height: 560px;
+  /*background-color: white;*/
+}
