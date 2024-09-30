@@ -36,34 +36,32 @@ export const Navigation: React.FC = () => {
       </nav>
       <div className={active ? 'nav-list nav-list-hidden' : 'nav-list'}>
         <ul className="menu__list">
-          <li>
-            <a className="menuItem" href="/">
-              domů
-            </a>
-          </li>
-          <li>
-            <a className="menuItem" href="o-mne">
-              o mně
-            </a>
-          </li>
-          <li>
-            <a className="menuItem" href="kurzy">
-              kurzy
-            </a>
-          </li>
-          <li>
-            <a className="menuItem" href="kontakty">
-              kontakt
-            </a>
-          </li>
-          <li>
-            <a
-              className="menuItem"
-              href="https://www.fler.cz/japonstina-s-ajou"
-            >
-              e-shop
-            </a>
-          </li>
+          <a className="menuItem" href="/">
+            <div className="menuItem">
+              <li>domů</li>
+            </div>
+          </a>
+
+          <a className="menuItem" href="o-mne">
+            <div className="menuItem">
+              <li>o mně</li>
+            </div>
+          </a>
+          <a className="menuItem" href="kurzy">
+            <div className="menuItem">
+              <li>kurzy</li>
+            </div>
+          </a>
+          <a className="menuItem" href="kontakty">
+            <div className="menuItem">
+              <li>kontakt</li>
+            </div>
+          </a>
+          <a className="menuItem" href="https://www.fler.cz/japonstina-s-ajou">
+            <div className="menuItem">
+              <li>e-shop</li>
+            </div>
+          </a>
         </ul>
       </div>
     </>

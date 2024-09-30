@@ -5,10 +5,17 @@ nav {
   height: 55px;
 }
 
+.navigation {
+  background-color: var(--bgColor4);
+}
+
+.menu__list {
+  padding: 0;
+}
+
 .menu__list li {
   display: block;
   list-style-type: none;
-
 }
 
 li {
@@ -22,8 +29,8 @@ p {
 .nav-mobile {
   width: 55px;
   border: none;
-  background-color: transparent;
   background-size: cover;
+  background-color: transparent;
 }
 
 .nav-hamburger {
@@ -35,11 +42,13 @@ p {
 }
 
 .nav-list {
-  background-color: var(--bgColor2);
+  background-color: var(--nav);
+  padding: 0;
 }
 
 .nav-list-hidden {
   display: none;
+  padding: 0;
 }
 
 .nabidka {
@@ -47,11 +56,14 @@ p {
 }
 
 .menuItem {
-  color: var(--white);
+  color: var(--bgColor2);
   text-decoration: none;
+  background-color: var(--bgColor4);
+  margin: 0;
 }
 
-.menuItem:hover {
+.menuItem:hover,
+menuItem:active {
   color: var(--lightBlue);
   text-decoration: none;
   background-color: var(--bgColor1);
@@ -77,6 +89,10 @@ p {
     justify-content: space-evenly;
   }
 
+  .menuItem {
+    color: var(--bgColor2);
+  }
+
   .mobile-nav-back {
     display: none;
   }
@@ -88,8 +104,14 @@ p {
   .nav-list {
     display: block;
     justify-content: space-evenly;
-    background-color: var(--bgColor1);
+    background-color: var(--bgColor4);
   }
 
+  .menuItem:hover,
+  menuItem:active {
+    color: var(--lightBlue);
+    text-decoration: none;
+    background-color: var(--bgColor1);
+  }
 
 }

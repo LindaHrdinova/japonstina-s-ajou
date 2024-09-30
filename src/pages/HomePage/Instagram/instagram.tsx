@@ -6,7 +6,7 @@ export const Instragram: React.FC = () => {
       <div className="instagram">
         <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
         <iframe
-          src="//lightwidget.com/widgets/0ef47a1bf1a9527bbbab3f01012bfbc0.html"
+          src="//lightwidget.com/widgets/931dc531b42f556585b9dd5f3855047d.html"
           allowTransparency={true}
           scrolling="no"
           className="instagram-lightwidget"
