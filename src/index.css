@@ -104,12 +104,6 @@ p {
   background-color: var(--bgColor2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 @media only screen and (min-width: 600px) {
   body {
     background-color: var(--darkBlue);

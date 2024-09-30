@@ -1,9 +1,9 @@
 .instagram {
-  width: 100%;
+  padding: 0;
 }
 
 .instagram-lightwidget {
-  width: 100%;
+  width: 95%;
   border: 0;
   overflow: 'hidden';
   height: 560px;

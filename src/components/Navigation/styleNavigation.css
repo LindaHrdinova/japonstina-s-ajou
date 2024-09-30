@@ -55,7 +55,6 @@ p {
   color: var(--lightBlue);
   text-decoration: none;
   background-color: var(--bgColor1);
-  font-weight: bold;
 }
 
 @media only screen and (min-width: 600px) {

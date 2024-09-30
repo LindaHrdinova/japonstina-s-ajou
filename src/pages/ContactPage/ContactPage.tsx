@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './styleContact.css';
 
 const ContactPage: React.FC = () => {
   return (
@@ -9,88 +10,75 @@ const ContactPage: React.FC = () => {
         na můj Facebook nebo Instagram. Nebo můžete využít kontaktní formulář
         níže:
       </p>
-      <form className="form-horizontal">
-        <fieldset>
-          <legend>Form Name</legend>
-
-          <div className="form-group">
-            <label className="col-md-4 control-label" htmlFor="customerName">
-              Vaše jméno
-            </label>
-            <div className="col-md-4">
+      <form>
+        <div className="formStyle--group">
+          <div>
+            <label htmlFor="customerName">Vaše jméno</label>
+            <div>
               <input
                 id="customerName"
                 name="customerName"
                 type="text"
-                placeholder=""
-                className="form-control input-md"
+                placeholder="jméno"
                 required
               />
             </div>
           </div>
 
-          <div className="form-group">
-            <label className="col-md-4 control-label" htmlFor="customerEmail">
-              Váš e-mail
-            </label>
-            <div className="col-md-4">
+          <div>
+            <label htmlFor="customerSurname">Vaše příjmení</label>
+            <div>
+              <input
+                id="customerSurname"
+                name="customerSurname"
+                type="text"
+                placeholder="příjmení"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="formStyle--group">
+          <div>
+            <label htmlFor="customerEmail">Váš e-mail</label>
+            <div>
               <input
                 id="customerEmail"
                 name="customerEmail"
                 type="text"
-                placeholder=""
-                className="form-control input-md"
+                placeholder="e-mail"
                 required
               />
             </div>
           </div>
 
-          <div className="form-group">
-            <label className="col-md-4 control-label" htmlFor="topic">
-              Předmět
-            </label>
-            <div className="col-md-4">
+          <div>
+            <label htmlFor="topic">Předmět</label>
+            <div>
               <input
                 id="topic"
                 name="topic"
                 type="text"
-                placeholder=""
-                className="form-control input-md"
+                placeholder="předmět"
                 required
               />
             </div>
           </div>
+        </div>
 
-          <div className="form-group">
-            <label className="col-md-4 control-label" htmlFor="textarea">
-              Vaše zpráva
-            </label>
-            <div className="col-md-4">
-              <textarea
-                className="form-control"
-                id="textarea"
-                name="textarea"
-              ></textarea>
-            </div>
-          </div>
+        <label htmlFor="textarea">Vaše zpráva</label>
+        <div>
+          <textarea
+            id="textarea"
+            name="textarea"
+            rows={6}
+            placeholder="předmět"
+            required
+          ></textarea>
+        </div>
 
-          {/*<!-- Button -->*/}
-          <div className="form-group">
-            <label
-              className="col-md-4 control-label"
-              htmlFor="contactButton"
-            ></label>
-            <div className="col-md-4">
-              <button
-                id="contactButton"
-                name="contactButton"
-                className="btn btn-primary"
-              >
-                Odeslat
-              </button>
-            </div>
-          </div>
-        </fieldset>
+        <input type="submit" value="Odeslat" />
       </form>
     </div>
   );
