@@ -6,11 +6,12 @@ nav {
 }
 
 .navigation {
-  background-color: var(--bgColor4);
+  background-color: var(--bgColor1);
 }
 
 .menu__list {
   padding: 0;
+  margin: 0;
 }
 
 .menu__list li {
@@ -66,7 +67,7 @@ p {
 menuItem:active {
   color: var(--lightBlue);
   text-decoration: none;
-  background-color: var(--bgColor1);
+  background-color: var(--black);
 }
 
 @media only screen and (min-width: 600px) {
