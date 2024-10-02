@@ -4,6 +4,7 @@ header {
   min-height: 200px;
   background-image: url(./img/IMG_1323.jpg);
   background-size: cover;
+  aspect-ratio: 3/2;
   background-position: 80% 42%;
 }
 
@@ -18,5 +19,6 @@ header {
 
   header {
     height: 400px;
+    aspect-ratio: initial;
   }
 }
