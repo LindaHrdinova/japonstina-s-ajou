@@ -2,8 +2,10 @@ footer {
   background-color: var(--red);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  color: var(--darkBlue)
+  color: var(--darkBlue);
+  height: 30px;
 }
 
 .footer_link {
