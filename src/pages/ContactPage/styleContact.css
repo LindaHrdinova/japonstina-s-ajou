@@ -21,13 +21,20 @@ input[type=submit]:hover {
   background-color: var(--darkBlue);
 }
 
-.formStyle--group {
-  display: flex;
-  gap: 20px;
+.formStyle__input {
+  padding: 20px 0 5px 0;
 }
 
-.formStyle--group>div {
-  width: 50%;
+
+@media only screen and (min-width: 600px) {
+  .formStyle__group {
+    display: flex;
+    gap: 20px;
+  }
+
+  .formStyle__group>div {
+    width: 50%;
+  }
 }
 
 /* GREEN

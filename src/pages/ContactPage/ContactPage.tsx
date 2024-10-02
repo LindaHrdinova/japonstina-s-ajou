@@ -11,10 +11,10 @@ const ContactPage: React.FC = () => {
         níže:
       </p>
       <form>
-        <div className="formStyle--group">
-          <div>
+        <div className="formStyle__group">
+          <div className="formStyle__input">
             <label htmlFor="customerName">Vaše jméno</label>
-            <div>
+            <div className="formStyle__input">
               <input
                 id="customerName"
                 name="customerName"
@@ -25,42 +25,14 @@ const ContactPage: React.FC = () => {
             </div>
           </div>
 
-          <div>
-            <label htmlFor="customerSurname">Vaše příjmení</label>
-            <div>
-              <input
-                id="customerSurname"
-                name="customerSurname"
-                type="text"
-                placeholder="příjmení"
-                required
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="formStyle--group">
-          <div>
+          <div className="formStyle__input">
             <label htmlFor="customerEmail">Váš e-mail</label>
-            <div>
+            <div className="formStyle__input">
               <input
                 id="customerEmail"
                 name="customerEmail"
                 type="text"
                 placeholder="e-mail"
-                required
-              />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="topic">Předmět</label>
-            <div>
-              <input
-                id="topic"
-                name="topic"
-                type="text"
-                placeholder="předmět"
                 required
               />
             </div>
@@ -73,7 +45,7 @@ const ContactPage: React.FC = () => {
             id="textarea"
             name="textarea"
             rows={6}
-            placeholder="předmět"
+            placeholder="vaše zpráva"
             required
           ></textarea>
         </div>
