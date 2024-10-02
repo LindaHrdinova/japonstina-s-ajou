@@ -1,12 +1,22 @@
 header {
   max-height: 430px;
-  background-color: var(--red);
+  background-color: var(--bgColor1);
+  min-height: 200px;
+  background-image: url(./img/IMG_1323.jpg);
+  background-size: cover;
+  background-position: 80% 42%;
 }
 
 .headerImg {
   background-repeat: no-repeat;
-
   max-height: 430px;
   width: 100%;
   object-fit: cover;
+}
+
+@media only screen and (min-width: 600px) {
+
+  header {
+    height: 400px;
+  }
 }
