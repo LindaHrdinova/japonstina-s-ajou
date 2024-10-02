@@ -1,12 +1,12 @@
 nav {
-  background-color: var(--bgColor2);
   display: flex;
   justify-content: flex-end;
   height: 55px;
 }
 
 .navigation {
-  background-color: var(--bgColor1);
+  background-color: var(--red);
+  border-bottom: 1px solid var(--nav)
 }
 
 .menu__list {
@@ -35,15 +35,14 @@ p {
 }
 
 .nav-hamburger {
-  background-image: url("img/hamburgerMenu.png");
+  background-image: url("./img/hamburgerMenu.png");
 }
 
 .nav-cross {
-  background-image: url("/img/crossMenu.png");
+  background-image: url("./img/crossMenu.png");
 }
 
 .nav-list {
-  background-color: var(--nav);
   padding: 0;
 }
 
@@ -57,17 +56,17 @@ p {
 }
 
 .menuItem {
-  color: var(--bgColor2);
+  color: var(--darkBlue);
   text-decoration: none;
-  background-color: var(--bgColor4);
+  background-color: var(--nav);
   margin: 0;
 }
 
 .menuItem:hover,
 menuItem:active {
-  color: var(--lightBlue);
+  color: var(--bgColor3);
   text-decoration: none;
-  background-color: var(--black);
+  background-color: var(--red);
 }
 
 @media only screen and (min-width: 600px) {
@@ -91,7 +90,8 @@ menuItem:active {
   }
 
   .menuItem {
-    color: var(--bgColor2);
+    color: var(--white);
+    background-color: var(--red);
   }
 
   .mobile-nav-back {
@@ -105,14 +105,14 @@ menuItem:active {
   .nav-list {
     display: block;
     justify-content: space-evenly;
-    background-color: var(--bgColor4);
+    background-color: var(--red);
   }
 
   .menuItem:hover,
   menuItem:active {
-    color: var(--lightBlue);
+    color: var(--darkBlue);
     text-decoration: none;
-    background-color: var(--bgColor1);
+    background-color: var(--nav);
   }
 
 }

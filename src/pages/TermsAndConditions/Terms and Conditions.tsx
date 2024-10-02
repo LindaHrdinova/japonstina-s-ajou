@@ -16,7 +16,10 @@ const TermsAndConditions: React.FC = () => {
         <p>Nejsem plátce DPH.</p>
       </div>
       <div>
-        <p>E-mail: japonstina.aja@gmail.com</p>
+        <p>
+          E-mail:{' '}
+          <a href="mailto:japonstina.aja@gmail.com">japonstina.aja@gmail.com</a>
+        </p>
         <p>Telefon: tel. číslo</p>
       </div>
       <p>
@@ -313,16 +316,17 @@ const TermsAndConditions: React.FC = () => {
       <p>
         V souvislosti s ochranou osobních údajů máte řadu práv. Pokud budete
         chtít některého z těchto práv využít, kontaktujte mě prostřednictvím
-        e-mailu japonstina.aja@gmail.com . Máte právo na informace, které je
-        plněno již touto informační stránkou se zásadami zpracování osobních
-        údajů. Díky právu na přístup mě můžete kdykoli vyzvat a já vám doložím
-        ve lhůtě 14 dní jaké vaše osobní údaje zpracovávám a proč. Pokud se u
-        vás něco změní nebo shledáte své osobní údaje neaktuální nebo neúplné,
-        máte právo na doplnění a změnu osobních údajů. Právo na omezení
-        zpracování můžete využít, pokud se domníváte, že zpracovávám vaše
-        nepřesné údaje, domníváte se, že provádím zpracování nezákonně, ale
-        nechcete všechny údaje smazat nebo pokud jste vznesl námitku proti
-        zpracování.
+        e-mailu{' '}
+        <a href="mailto:japonstina.aja@gmail.com">japonstina.aja@gmail.com</a>.
+        Máte právo na informace, které je plněno již touto informační stránkou
+        se zásadami zpracování osobních údajů. Díky právu na přístup mě můžete
+        kdykoli vyzvat a já vám doložím ve lhůtě 14 dní jaké vaše osobní údaje
+        zpracovávám a proč. Pokud se u vás něco změní nebo shledáte své osobní
+        údaje neaktuální nebo neúplné, máte právo na doplnění a změnu osobních
+        údajů. Právo na omezení zpracování můžete využít, pokud se domníváte, že
+        zpracovávám vaše nepřesné údaje, domníváte se, že provádím zpracování
+        nezákonně, ale nechcete všechny údaje smazat nebo pokud jste vznesl
+        námitku proti zpracování.
       </p>
       <p>Tyto zásady zpracování osobních údajů platí od 1. 1. 2022.</p>
     </div>

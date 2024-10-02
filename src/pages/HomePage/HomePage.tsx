@@ -4,7 +4,7 @@ import { Instragram } from './Instagram/instagram';
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <>
       <div>
         <h1>Vítejte</h1>
         <p>Vítejte….</p>
@@ -12,7 +12,7 @@ const HomePage: React.FC = () => {
       </div>
       <Instragram />
       <Reviews />
-    </div>
+    </>
   );
 };
 
