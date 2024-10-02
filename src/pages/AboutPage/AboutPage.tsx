@@ -4,9 +4,9 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <div>
-        <p>こんにちは！</p>
+        <p lang="jp">こんにちは！</p>
 
-        <p>はじめまして。アーヤです。</p>
+        <p lang="jp">はじめまして。アーヤです。</p>
 
         <p>Dobrý den! Jmenuji se Ája, naučím/provedu/věnuji se…</p>
 
