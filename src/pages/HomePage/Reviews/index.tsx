@@ -48,7 +48,7 @@ export const Reviews: React.FC = () => {
           console.log(review.author);
           console.log(12);
           return (
-            <div className="review" key={review.author}>
+            <div className="review textBox" key={review.author}>
               <h3>{review.author}</h3>
               <span>
                 {Array.from({ length: review.score }, (_, i) => (

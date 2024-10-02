@@ -28,7 +28,8 @@ const CoursesPage: React.FC = () => {
 
       <p>Asynchronní kurzy zahrnují…</p>
 
-      <p>Na zimní semestr jsou otevřeny tyto kurzy:</p>
+      <h3>Na zimní semestr jsou otevřeny tyto kurzy:</h3>
+
       <CoursesList />
     </div>
   );

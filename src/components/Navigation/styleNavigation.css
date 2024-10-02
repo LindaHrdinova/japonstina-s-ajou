@@ -73,13 +73,14 @@ menuItem:active {
   nav {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    padding: 0;
   }
 
   .menu__list li {
     display: inline;
     list-style-type: none;
     justify-content: space-between;
+    margin: 0;
 
   }
 
@@ -87,6 +88,8 @@ menuItem:active {
     margin: 0;
     display: flex;
     justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
   }
 
   .menuItem {
@@ -114,5 +117,4 @@ menuItem:active {
     text-decoration: none;
     background-color: var(--nav);
   }
-
 }

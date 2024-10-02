@@ -51,7 +51,7 @@ type CoursesListType = {
 
 export const CoursesList: React.FC = () => {
   return (
-    <div className="coursesList">
+    <div className="coursesList textBox">
       {rewiewsList.map((courses) => {
         console.log(courses.price);
         return (
