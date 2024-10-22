@@ -9,6 +9,7 @@
 .revievewList__text {
   text-align: justify;
   padding: 2rem 5px 5px 5px;
+  hyphens: auto;
 }
 
 .review {

@@ -1,7 +1,36 @@
-import * as React from 'react';
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 import './styleContact.css';
 
 const ContactPage: React.FC = () => {
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          'service_l0unsox', // EmailJS service ID
+          'template_5ofh1nk', // EmailJS template ID
+          form.current,
+          'VfneZ3e37-ONHg9q9', // EmailJS user ID
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert('Zpráva byla odeslána!');
+          },
+          (error) => {
+            console.log(error.text);
+            alert('Chyba při odesílání zprávy!');
+          },
+        );
+
+      e.currentTarget.reset();
+    }
+  };
+
   return (
     <div>
       <p>
@@ -10,7 +39,7 @@ const ContactPage: React.FC = () => {
         na můj Facebook nebo Instagram. Nebo můžete využít kontaktní formulář
         níže:
       </p>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div className="formStyle__group">
           <div className="formStyle__input">
             <label htmlFor="customerName">Jméno</label>
@@ -43,7 +72,7 @@ const ContactPage: React.FC = () => {
         <div>
           <textarea
             id="textarea"
-            name="textarea"
+            name="customerTextarea"
             rows={6}
             placeholder=""
             required
