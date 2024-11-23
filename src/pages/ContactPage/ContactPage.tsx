@@ -7,6 +7,7 @@ const ContactPage: React.FC = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log('Ahoj');
 
     if (form.current) {
       emailjs

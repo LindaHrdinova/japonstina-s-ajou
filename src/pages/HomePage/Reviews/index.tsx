@@ -45,8 +45,6 @@ export const Reviews: React.FC = () => {
       <h2>Recenze</h2>
       <div className="revievewList">
         {rewiewsList.map((review) => {
-          console.log(review.author);
-          console.log(12);
           return (
             <div className="review textBox" key={review.author}>
               <h3>{review.author}</h3>
