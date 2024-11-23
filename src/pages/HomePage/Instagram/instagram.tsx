@@ -1,7 +1,7 @@
 import './styleInstagram.css';
 
 export const Instragram: React.FC = () => {
-  const mockUp: boolean = false;
+  const mockUp: boolean = true;
 
   return (
     <>
