@@ -1,4 +1,5 @@
 import './styleInstagram.css';
+import mockUpInstagram from './img/mockup_Instagram_Aja.png';
 
 export const Instragram: React.FC = () => {
   const mockUp: boolean = true;
@@ -7,7 +8,11 @@ export const Instragram: React.FC = () => {
     <>
       <div className="instagram">
         {mockUp ? (
-          <img src="public/mockup - Insta - Ája.png" alt="" />
+          <img
+            src={mockUpInstagram}
+            alt="Mock-up Instagramu, jak by mohl vypadat na webu"
+            style={{ width: '100%', height: 'auto', display: 'block' }}
+          />
         ) : (
           <>
             <script src="http://cdn.lightwidget.com/widgets/lightwidget.js"></script>
