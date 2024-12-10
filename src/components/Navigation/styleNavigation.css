@@ -93,8 +93,8 @@ menuItem:active {
   }
 
   .menuItem {
-    color: var(--white);
-    background-color: var(--red);
+    color: var(--darkBlue);
+    background-color: var(--bgColor2);
   }
 
   .mobile-nav-back {
@@ -108,13 +108,15 @@ menuItem:active {
   .nav-list {
     display: block;
     justify-content: space-evenly;
-    background-color: var(--red);
+    /* background-color: var(--red); */
   }
 
   .menuItem:hover,
   menuItem:active {
-    color: var(--darkBlue);
+    background-color: var(--bgColor3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
     text-decoration: none;
-    background-color: var(--nav);
+    color: var(--darkBlue);
   }
 }

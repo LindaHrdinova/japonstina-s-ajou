@@ -11,7 +11,11 @@ export const Instragram: React.FC = () => {
           <img
             src={mockUpInstagram}
             alt="Mock-up Instagramu, jak by mohl vypadat na webu"
-            style={{ width: '100%', height: 'auto', display: 'block' }}
+            style={{
+              width: '100%',
+              height: 'auto',
+              display: 'center',
+            }}
           />
         ) : (
           <>
