@@ -20,7 +20,7 @@ const App: React.FC = () => {
       <Header />
       <Navigation />
       <main>
-        <div>
+        <div className="mainDiv">
           <Outlet />
         </div>
       </main>
