@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@200..800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap');
 
 :root {
   --bgColor1: #282525;
@@ -87,6 +87,7 @@ button:focus-visible {
 body {
   width: 100%;
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.1rem;
   color: var(--darkBlue);
   margin: 0;
 }

@@ -2,6 +2,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   height: 50px;
+  /*border-radius: 100%;*/
 }
 
 .navigation {
@@ -12,6 +13,7 @@ nav {
 .menu__list {
   padding: 0;
   margin: 0;
+  font-weight: 700;
 }
 
 .menu__list li {
