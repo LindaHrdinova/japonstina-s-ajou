@@ -18,5 +18,15 @@
 .coursesRight {
   text-align: right;
   word-break: break-word;
-  /* Specifické zalomení */
+  display: inline-flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 400px) {
+  .coursesRight {
+    text-align: right;
+    word-break: break-word;
+    display: inline-flex;
+    flex-direction: row;
+  }
 }
