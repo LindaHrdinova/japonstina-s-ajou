@@ -8,17 +8,11 @@
 
 .reviewList__text {
   text-align: center;
-  padding: 2rem 5px 10px 5px;
+  padding: 1rem 5px 10px 5px;
 }
 
 .review {
   flex: 1 1 calc(33.33% - 50px);
   max-width: 300px;
   min-width: 200px;
-}
-
-@media only screen and (min-width: 600px) {
-  .reviewList__text {
-    text-align: justify;
-  }
 }
