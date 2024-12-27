@@ -6,8 +6,9 @@ nav {
 }
 
 .navigation {
-  background-color: var(--red);
-  border-bottom: 1px solid var(--nav)
+  background-color: var(--bgColor3);
+  border-bottom: 1px solid var(--nav);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu__list {
@@ -53,10 +54,6 @@ p {
   padding: 0;
 }
 
-.nabidka {
-  display: flex;
-}
-
 .menuItem {
   color: var(--darkBlue);
   text-decoration: none;
@@ -68,7 +65,7 @@ p {
 menuItem:active {
   color: var(--bgColor3);
   text-decoration: none;
-  background-color: var(--red);
+  background-color: var(--darkBlue);
 }
 
 @media only screen and (min-width: 600px) {
@@ -110,7 +107,6 @@ menuItem:active {
   .nav-list {
     display: block;
     justify-content: space-evenly;
-    /* background-color: var(--red); */
   }
 
   .menuItem:hover,

@@ -5,7 +5,7 @@
   --bgColor2: #F3F3F3;
   --bgColor3: #FDFDFD;
   --bgColor4: #505050;
-  --nav: #D9D9D9;
+  --nav: #dbdbdb;
   --white: #ffffff;
   --black: #1c1c1c;
   --darkBlue: #001359;
@@ -95,6 +95,10 @@ body {
 
 div {
   padding: 10px 15px;
+}
+
+h1 {
+  margin-top: 10px;
 }
 
 p {

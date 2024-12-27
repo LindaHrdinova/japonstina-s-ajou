@@ -1,16 +1,17 @@
 footer {
-  background-color: var(--red);
+  background-color: var(--bgColor3);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   color: var(--darkBlue);
   height: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .footer_link {
   text-decoration: none;
-  color: var(--bgColor2);
+  color: var(--darkBlue);
 }
 
 .footer_link:hover {
