@@ -123,6 +123,14 @@ p {
   background-color: var(--bgColor2);
 }
 
+a {
+  color: var(--red);
+}
+
+a:hover {
+  color: var(--lightBlue);
+}
+
 @media only screen and (min-width: 600px) {
   body {
     background-color: var(--darkBlue);

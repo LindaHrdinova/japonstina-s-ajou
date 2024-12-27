@@ -17,5 +17,12 @@ footer {
 
 .footer_link:hover {
   text-decoration: none;
-  color: var(--lightBlue);
+}
+
+.leftText {
+  text-align: left;
+}
+
+.rightText {
+  text-align: right;
 }
