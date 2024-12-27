@@ -1,9 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './styleContact.css';
 
 const ContactPage: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
+  const [messageStatus, setMessageStatus] = useState<string | null>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -20,11 +21,11 @@ const ContactPage: React.FC = () => {
         .then(
           (result) => {
             console.log(result.text);
-            alert('Zpráva byla odeslána!');
+            setMessageStatus('Zpráva byla odeslána!');
           },
           (error) => {
             console.log(error.text);
-            alert('Chyba při odesílání zprávy!');
+            setMessageStatus('Chyba při odesílání zprávy!');
           },
         );
 
@@ -82,6 +83,7 @@ const ContactPage: React.FC = () => {
 
         <input type="submit" value="Odeslat" />
       </form>
+      {messageStatus && <div className="messageStatus">{messageStatus}</div>}
     </div>
   );
 };

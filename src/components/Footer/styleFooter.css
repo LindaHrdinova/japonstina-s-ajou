@@ -11,6 +11,7 @@ footer {
 
 .footer_link {
   text-decoration: none;
+  font-weight: 700;
   color: var(--darkBlue);
 }
 
