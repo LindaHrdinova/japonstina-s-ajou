@@ -1,18 +1,24 @@
-.revievewList {
+.reviewList {
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 35px;
+  gap: 25px;
 }
 
-.revievewList__text {
-  text-align: justify;
-  padding: 2rem 5px 5px 5px;
-  hyphens: auto;
+.reviewList__text {
+  text-align: center;
+  padding: 2rem 5px 10px 5px;
 }
 
 .review {
-  width: 25%;
-  min-width: 250px;
+  flex: 1 1 calc(33.33% - 50px);
+  max-width: 300px;
+  min-width: 200px;
+}
+
+@media only screen and (min-width: 600px) {
+  .reviewList__text {
+    text-align: justify;
+  }
 }

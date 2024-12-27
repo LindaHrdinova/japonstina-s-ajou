@@ -43,7 +43,7 @@ export const Reviews: React.FC = () => {
   return (
     <>
       <h2>Recenze</h2>
-      <div className="revievewList">
+      <div className="reviewList">
         {rewiewsList.map((review) => {
           return (
             <div className="review textBox" key={review.author}>
@@ -53,7 +53,7 @@ export const Reviews: React.FC = () => {
                   <span key={i}>⭐</span>
                 ))}
               </span>
-              <div className="revievewList__text">{review.text}</div>
+              <div className="reviewList__text">{review.text}</div>
             </div>
           );
         })}

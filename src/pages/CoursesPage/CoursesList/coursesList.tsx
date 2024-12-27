@@ -64,8 +64,6 @@ export const CoursesList: React.FC = () => {
           </div>
         );
       })}
-      <span>Skupinový kurz pro úplné začátečníky</span>
-      <span>Skupinový kurz pro úplné začátečníky</span>
     </div>
   );
 };
