@@ -58,7 +58,7 @@ export const CoursesList: React.FC = () => {
           <div className="courses" key={courses.courseName}>
             <span className="coursesLeft">{courses.courseName}</span>
             <span className="coursesRight">
-              {courses.price} Kč / {courses.lessons}{' '}
+              {courses.price} Kč /<wbr /> {courses.lessons}&nbsp;
               {courses.lessons <= 4 ? 'lekce' : 'lekcí'}
             </span>
           </div>
