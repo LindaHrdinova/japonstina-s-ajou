@@ -37,14 +37,6 @@ p {
   background-color: transparent;
 }
 
-.nav-hamburger {
-  background-image: url("./img/hamburgerMenu.png");
-}
-
-.nav-cross {
-  background-image: url("./img/crossMenu.png");
-}
-
 .nav-list {
   padding: 0;
 }

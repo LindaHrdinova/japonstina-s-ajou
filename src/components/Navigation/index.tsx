@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import HamburgerIcon from './img/hamburgerIcon.svg';
+import CrossIcon from './img/crossIcon.svg';
 import './styleNavigation.css';
 
 /*
@@ -21,19 +22,15 @@ export const Navigation: React.FC = () => {
   const [active, setActive] = useState<boolean>(true);
 
   const handleShowMenu = () => {
-    console.log(active);
     active ? setActive(false) : setActive(true);
   };
 
   return (
     <>
       <nav className="navigation">
-        <button
-          className={
-            active ? 'nav-mobile nav-hamburger' : 'nav-mobile nav-cross'
-          }
-          onClick={handleShowMenu}
-        ></button>
+        <button className="nav-mobile" onClick={handleShowMenu}>
+          {active ? <img src={HamburgerIcon} /> : <img src={CrossIcon} />}
+        </button>
       </nav>
       <div className={active ? 'nav-list nav-list-hidden' : 'nav-list'}>
         <ul className="menu__list">
@@ -61,6 +58,7 @@ export const Navigation: React.FC = () => {
           <a
             className="menuItem"
             href="https://www.fler.cz/japonstina-s-ajou"
+            title="odkaz na Fler"
             target="_blank"
             rel="noopener noreferrer"
           >
