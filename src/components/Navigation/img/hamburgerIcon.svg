@@ -3,8 +3,8 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #21274f;
-        stroke: #21274f;
+        fill: #001359;
+        stroke: #001359;
         stroke-miterlimit: 10;
       }
 
