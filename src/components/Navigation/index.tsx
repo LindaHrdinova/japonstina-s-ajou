@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './styleNavigation.css';
 
@@ -36,28 +37,33 @@ export const Navigation: React.FC = () => {
       </nav>
       <div className={active ? 'nav-list nav-list-hidden' : 'nav-list'}>
         <ul className="menu__list">
-          <a className="menuItem" href="/">
+          <Link className="menuItem" to="/">
             <div className="menuItem">
               <li>Domů</li>
             </div>
-          </a>
+          </Link>
 
-          <a className="menuItem" href="o-mne">
+          <Link className="menuItem" to="o-mne">
             <div className="menuItem">
               <li>O mně</li>
             </div>
-          </a>
-          <a className="menuItem" href="kurzy">
+          </Link>
+          <Link className="menuItem" to="kurzy">
             <div className="menuItem">
               <li>Kurzy</li>
             </div>
-          </a>
-          <a className="menuItem" href="kontakty">
+          </Link>
+          <Link className="menuItem" to="kontakty">
             <div className="menuItem">
               <li>Kontakt</li>
             </div>
-          </a>
-          <a className="menuItem" href="https://www.fler.cz/japonstina-s-ajou">
+          </Link>
+          <a
+            className="menuItem"
+            href="https://www.fler.cz/japonstina-s-ajou"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="menuItem">
               <li>e-Shop</li>
             </div>

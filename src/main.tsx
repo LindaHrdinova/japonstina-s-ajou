@@ -13,10 +13,12 @@ import AboutPage from './pages/AboutPage/AboutPage.tsx';
 import CoursesPage from './pages/CoursesPage/CoursesPage.tsx';
 import ContactPage from './pages/ContactPage/ContactPage.tsx';
 import TermsAndConditions from './pages/TermsAndConditions/Terms and Conditions.tsx';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop.tsx';
 
 const App: React.FC = () => {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Navigation />
       <main>

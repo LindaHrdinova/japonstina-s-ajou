@@ -1,17 +1,18 @@
 import './styleFooter.css';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <span className="leftText">
-        <a href="." className="footer_link">
+        <Link to="/" className="footer_link">
           JAPONŠTINA S ÁJOU
-        </a>
+        </Link>
       </span>
       <span className="rightText">
-        <a href="obchodni-podminky" className="footer_link">
+        <Link to="obchodni-podminky" className="footer_link">
           Obchodní podmínky
-        </a>
+        </Link>
       </span>
     </footer>
   );
