@@ -4,20 +4,6 @@ import HamburgerIcon from './img/hamburgerIcon.svg';
 import CrossIcon from './img/crossIcon.svg';
 import './styleNavigation.css';
 
-/*
-document.body.innerHTML += 'funguju';
-
-const navElement = document.querySelector('.nav-list');
-const navButton = document.querySelector('.nav-mobile');
-
-const showMenu = () => {
-  navElement.classList.toggle('nav-list-hidden');
-  navButton.classList.toggle('nav-hamburger');
-  navButton.classList.toggle('nav-cross');
-  console.log('kliknutí');
-};
-*/
-
 export const Navigation: React.FC = () => {
   const [active, setActive] = useState<boolean>(true);
 
@@ -39,7 +25,6 @@ export const Navigation: React.FC = () => {
               <li>Domů</li>
             </div>
           </Link>
-
           <Link className="menuItem" to="o-mne">
             <div className="menuItem">
               <li>O mně</li>
