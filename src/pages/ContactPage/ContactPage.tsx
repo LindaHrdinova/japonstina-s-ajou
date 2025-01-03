@@ -62,7 +62,7 @@ const ContactPage: React.FC = () => {
               <input
                 id="customerEmail"
                 name="customerEmail"
-                type="text"
+                type="email"
                 placeholder=""
                 required
               />
